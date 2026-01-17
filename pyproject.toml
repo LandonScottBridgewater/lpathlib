@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=65.5.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lpathlib"
+version = "0.1.0"
+description = "filesystem lineage operation utility"
+authors = [{name = "Landon Scott Bridgewater"}]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+
+[project.urls]
+repo = "https://github.com/landonscottbridgewater/lpathlib"
