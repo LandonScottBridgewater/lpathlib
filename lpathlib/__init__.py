@@ -1,6 +1,11 @@
 from pathlib import Path, PosixPath, WindowsPath
 import sys
 
+class Script:
+    def __init__(self, file=__file__):
+        self.path = lPath(file).resolve()
+        self.parent = self.path.parent
+
 class lPath(type(Path())):
     def get_siblings(self):
         if not self.exists():
